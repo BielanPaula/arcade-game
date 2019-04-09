@@ -60,6 +60,8 @@ var Player = function(x, y) {
     }
 }
 
+
+
 Player.prototype.update = function(dt) {
 };
 
@@ -71,7 +73,7 @@ Player.prototype.handleInput = function(keyPress) {
     if (keyPress == "left" && this.x > 0) {
       this.x -= 101;
     }
-    if (keyPress == "up" && this.y >= 0) {
+    if (keyPress == "up" && this.y > 0) {
       this.y -= 83;
     }
     if (keyPress == "right" && this.x < 303) {
@@ -81,9 +83,14 @@ Player.prototype.handleInput = function(keyPress) {
       this.y += 83;
     }
     if (this.y < 0) {
-      player.reset();
+      setTimeout(continueExecution,500);
     }
 };
+
+function continueExecution() {
+  window.confirm("Congratulations!");
+  player.reset();
+}
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
