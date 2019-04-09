@@ -8,4 +8,4 @@ This is one of my project of the Udacity Front-End Nanodegree.
 - Select index.html to start the app
 
 # Game directions and rules
-The player starts of the bottom of the board and the user should go to the top of the board, while avoiding enemies. When the player has been hit by one of the enemies, the game will be reset.
+The player starts at the bottom of the board and the user should go to the top of the board, while avoiding enemies. When the player has been hit by one of the enemies, the game will reset.
